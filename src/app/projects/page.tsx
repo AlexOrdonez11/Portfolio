@@ -89,6 +89,21 @@ const analyticsAiStack = [
   "Interactive Analytics",
 ];
 
+const analyticsAiMedia = [
+  {
+    type: "image" as const,
+    src: "/images/analytics_ai.png",
+    alt: "Analytics AI forecasting dashboard",
+    label: "Forecasting dashboard",
+  },
+  {
+    type: "image" as const,
+    src: "/images/analytics_ai_architecture.png",
+    alt: "Analytics AI architecture diagram",
+    label: "Architecture diagram",
+  },
+];
+
 const smartMetersStack = [
   "Smart Meter Data",
   "Time-Series Forecasting",
@@ -385,24 +400,13 @@ export default function ProjectsPage() {
             <span className="skill-pill">Analytics AI</span>
           </div>
 
-          <div className="mt-5 grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-            <div>
-              <h2 className="subsection-title">Analytics AI</h2>
-              <p className="card-copy">
-                Analytics AI was built around the idea that advanced forecasting
-                and decision support should be easier to explore, explain, and
-                act on. The project focused on combining predictive analytics
-                with agentic AI workflows so users could move from raw data and
-                model outputs to more interactive insight generation.
-              </p>
-              <p className="card-copy">
-                I contributed to a solution that brought together forecasting,
-                simulation, and AI-assisted analytics for electricity
-                consumption scenarios. The system was designed not only to
-                generate predictions, but also to help users interrogate the
-                results, understand possible trends, and explore operational
-                decisions through a more natural analytical experience.
-              </p>
+          <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(19rem,0.7fr)] lg:items-stretch">
+            <div className="project-media-column">
+              <h2 className="subsection-title project-column-title">Analytics AI</h2>
+              <ProjectMediaCarousel
+                title="Analytics walkthrough"
+                items={analyticsAiMedia}
+              />
             </div>
 
             <div className="info-panel project-snapshot-panel">
@@ -471,6 +475,27 @@ export default function ProjectsPage() {
                   </p>
                 </section>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-7 project-overview-block">
+            <h3 className="project-overview-title">Overview</h3>
+            <div>
+              <p className="card-copy">
+                Analytics AI was built around the idea that advanced forecasting
+                and decision support should be easier to explore, explain, and
+                act on. The project focused on combining predictive analytics
+                with agentic AI workflows so users could move from raw data and
+                model outputs to more interactive insight generation.
+              </p>
+              <p className="card-copy">
+                I contributed to a solution that brought together forecasting,
+                simulation, and AI-assisted analytics for electricity
+                consumption scenarios. The system was designed not only to
+                generate predictions, but also to help users interrogate the
+                results, understand possible trends, and explore operational
+                decisions through a more natural analytical experience.
+              </p>
             </div>
           </div>
         </article>
