@@ -246,13 +246,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="px-1 pt-12 md:pt-12">
-        <div className="project-section-heading">
-          <p className="section-kicker">Featured case studies</p>
-          <h2 className="subsection-title">
-            AI products with screenshots, architecture, and implementation context.
-          </h2>
-        </div>
+      <section className="px-1 pt-12 md:pt-6">
 
         <article className="project-card">
           <div className="flex flex-wrap items-center gap-3">
@@ -363,13 +357,6 @@ export default function ProjectsPage() {
             </div>
           </div>
         </article>
-
-        <div className="project-section-heading project-section-heading-spaced">
-          <p className="section-kicker">Additional project work</p>
-          <h2 className="subsection-title">
-            Supporting analytics, NLP, forecasting, and BI systems.
-          </h2>
-        </div>
 
         <article className="project-card mt-5">
           <div className="flex flex-wrap items-center gap-3">
@@ -488,7 +475,7 @@ export default function ProjectsPage() {
 
         <article className="project-card mt-5">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="project-type">Forecasting Platform</span>
+            <span className="project-type"> Analytics Platform</span>
             <span className="skill-pill">Analytics AI</span>
           </div>
 
