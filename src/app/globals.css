@@ -283,6 +283,13 @@ code {
   color: var(--muted);
 }
 
+.hero-title {
+  max-width: 19ch;
+  font-size: clamp(1.65rem, 3.2vw, 3rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+}
+
 .subsection-title {
   font-family: var(--font-sans);
   font-size: clamp(1.05rem, 1.28vw, 1.36rem);
@@ -573,6 +580,19 @@ code {
   background:
     linear-gradient(135deg, rgba(91, 141, 239, 0.08), rgba(255, 255, 255, 0.88)),
     var(--surface);
+}
+
+.project-section-heading {
+  max-width: 46rem;
+  margin-bottom: 1.1rem;
+}
+
+.project-section-heading .section-kicker {
+  margin-bottom: 0.55rem;
+}
+
+.project-section-heading-spaced {
+  margin-top: 2.3rem;
 }
 
 .project-type {

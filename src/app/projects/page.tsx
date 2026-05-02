@@ -75,6 +75,12 @@ const clientSignalEqMedia = [
     alt: "Client Signal EQ signal breakdown",
     label: "Signal breakdown",
   },
+  {
+    type: "image" as const,
+    src: "/images/clientsignaleq_architecture.png",
+    alt: "Client Signal EQ architecture diagram",
+    label: "Architecture diagram",
+  },
 ];
 
 const analyticsAiStack = [
@@ -115,6 +121,27 @@ const smartMetersStack = [
   "Energy Modeling",
 ];
 
+const smartMetersMedia = [
+  {
+    type: "image" as const,
+    src: "/images/AMI_Project.png",
+    alt: "Smart meters energy consumption analytics project",
+    label: "Smart meter analytics",
+  },
+  {
+    type: "image" as const,
+    src: "/images/AMI_Architecture.png",
+    alt: "Smart meters analytics architecture diagram",
+    label: "Architecture diagram",
+  },
+  {
+    type: "image" as const,
+    src: "/images/SAS_Hack_Win.jpg",
+    alt: "SAS hackathon win for the smart meters analytics project",
+    label: "SAS hackathon recognition",
+  },
+];
+
 const sentimentDatabricksStack = [
   "Databricks",
   "Python",
@@ -127,17 +154,31 @@ const sentimentDatabricksStack = [
   "NLP",
 ];
 
-const medicalChatbotStack = [
-  "LLMs",
-  "LSTM",
-  "TensorFlow",
-  "T5",
-  "GPT-2",
-  "NLP",
-  "Python",
-  "Conversational AI",
-  "Healthcare Data",
-  "Model Comparison",
+const sentimentDatabricksMedia = [
+  {
+    type: "image" as const,
+    src: "/images/Sentiment_Analysis_Architecture.png",
+    alt: "Sentiment analysis architecture diagram",
+    label: "Architecture diagram",
+  },
+  {
+    type: "image" as const,
+    src: "/images/Sentiment_Analysis_DW.png",
+    alt: "Sentiment analysis data warehouse design",
+    label: "Data warehouse design",
+  },
+  {
+    type: "image" as const,
+    src: "/images/Sentiment_Analysis_Dash1.png",
+    alt: "Sentiment analysis dashboard overview",
+    label: "Dashboard overview",
+  },
+  {
+    type: "image" as const,
+    src: "/images/Sentiment_Analysis_Dash2.png",
+    alt: "Sentiment analysis dashboard detail",
+    label: "Dashboard detail",
+  },
 ];
 
 const dashboardsStack = [
@@ -151,6 +192,27 @@ const dashboardsStack = [
   "Revenue Reporting",
   "Cancellation Analysis",
   "Stakeholder Dashboards",
+];
+
+const dashboardsMedia = [
+  {
+    type: "image" as const,
+    src: "/images/Operational_Dash1.png",
+    alt: "Operational dashboard overview",
+    label: "Operations overview",
+  },
+  {
+    type: "image" as const,
+    src: "/images/Operational_Dash2.png",
+    alt: "Operational dashboard KPI detail",
+    label: "KPI detail",
+  },
+  {
+    type: "image" as const,
+    src: "/images/Operational_Dash3.png",
+    alt: "Operational dashboard trend analysis",
+    label: "Trend analysis",
+  },
 ];
 
 export default function ProjectsPage() {
@@ -185,6 +247,13 @@ export default function ProjectsPage() {
       </section>
 
       <section className="px-1 pt-12 md:pt-12">
+        <div className="project-section-heading">
+          <p className="section-kicker">Featured case studies</p>
+          <h2 className="subsection-title">
+            AI products with screenshots, architecture, and implementation context.
+          </h2>
+        </div>
+
         <article className="project-card">
           <div className="flex flex-wrap items-center gap-3">
             <span className="project-type">Featured AI Product</span>
@@ -261,6 +330,14 @@ export default function ProjectsPage() {
                     retrieval design, and intelligent workflow orchestration.
                   </p>
                 </section>
+                <section className="tool-group">
+                  <h4 className="tool-group-title">Outcome</h4>
+                  <p className="card-copy mt-0">
+                    Converted scattered repair knowledge into a guided assistant
+                    experience with multimodal input, retrieval, and step-by-step
+                    task support.
+                  </p>
+                </section>
               </div>
             </div>
           </div>
@@ -286,6 +363,13 @@ export default function ProjectsPage() {
             </div>
           </div>
         </article>
+
+        <div className="project-section-heading project-section-heading-spaced">
+          <p className="section-kicker">Additional project work</p>
+          <h2 className="subsection-title">
+            Supporting analytics, NLP, forecasting, and BI systems.
+          </h2>
+        </div>
 
         <article className="project-card mt-5">
           <div className="flex flex-wrap items-center gap-3">
@@ -366,6 +450,14 @@ export default function ProjectsPage() {
                     AI Engineer / Technical Lead, focused on signal design,
                     language intelligence, and scalable architecture for AI-driven
                     analysis.
+                  </p>
+                </section>
+                <section className="tool-group">
+                  <h4 className="tool-group-title">Outcome</h4>
+                  <p className="card-copy mt-0">
+                    Turned enterprise email communication into structured client
+                    signals for sentiment, escalation risk, and relationship
+                    trend analysis.
                   </p>
                 </section>
               </div>
@@ -474,6 +566,13 @@ export default function ProjectsPage() {
                     into practical insight.
                   </p>
                 </section>
+                <section className="tool-group">
+                  <h4 className="tool-group-title">Outcome</h4>
+                  <p className="card-copy mt-0">
+                    Connected forecasting, simulation, and AI-guided exploration
+                    into a more interactive decision-support workflow.
+                  </p>
+                </section>
               </div>
             </div>
           </div>
@@ -506,24 +605,13 @@ export default function ProjectsPage() {
             <span className="skill-pill">Sentiment Analysis with Databricks</span>
           </div>
 
-          <div className="mt-5 grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-            <div>
-              <h2 className="subsection-title">Sentiment Analysis with Databricks</h2>
-              <p className="card-copy">
-                This project focused on turning unstructured user feedback into
-                usable product and behavioral insight. By collecting Google Play
-                Store review data and processing it with NLP workflows, the goal
-                was to understand how users felt, what patterns were emerging,
-                and where meaningful segments could be identified.
-              </p>
-              <p className="card-copy">
-                I worked on a pipeline that combined data collection, sentiment
-                modeling, clustering, and visualization so the results could be
-                explored in a practical way rather than remaining purely
-                technical outputs. The project connected Databricks-based
-                analytics with downstream reporting in Power BI, making it
-                easier to translate review data into decision-ready patterns.
-              </p>
+          <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(19rem,0.7fr)] lg:items-stretch">
+            <div className="project-media-column">
+              <h2 className="subsection-title project-column-title">Sentiment Analysis with Databricks</h2>
+              <ProjectMediaCarousel
+                title="Analytics walkthrough"
+                items={sentimentDatabricksMedia}
+              />
             </div>
 
             <div className="info-panel project-snapshot-panel">
@@ -593,6 +681,27 @@ export default function ProjectsPage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-7 project-overview-block">
+            <h3 className="project-overview-title">Overview</h3>
+            <div>
+              <p className="card-copy">
+                This project focused on turning unstructured user feedback into
+                usable product and behavioral insight. By collecting Google Play
+                Store review data and processing it with NLP workflows, the goal
+                was to understand how users felt, what patterns were emerging,
+                and where meaningful segments could be identified.
+              </p>
+              <p className="card-copy">
+                I worked on a pipeline that combined data collection, sentiment
+                modeling, clustering, and visualization so the results could be
+                explored in a practical way rather than remaining purely
+                technical outputs. The project connected Databricks-based
+                analytics with downstream reporting in Power BI, making it
+                easier to translate review data into decision-ready patterns.
+              </p>
+            </div>
+          </div>
         </article>
 
         <article className="project-card mt-5">
@@ -601,24 +710,13 @@ export default function ProjectsPage() {
             <span className="skill-pill">Energy Consumption Smart Meters</span>
           </div>
 
-          <div className="mt-5 grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-            <div>
-              <h2 className="subsection-title">Energy Consumption Smart Meters</h2>
-              <p className="card-copy">
-                Energy Consumption Smart Meters focused on turning large-scale
-                smart meter data into actionable forecasting and operational
-                insight. The project was centered on understanding consumption
-                behavior, identifying meaningful patterns, and building models
-                that could support better planning around electricity demand.
-              </p>
-              <p className="card-copy">
-                I contributed to a workflow that combined time-series analysis,
-                AI-assisted exploration, and interactive analytics to make
-                energy data easier to interpret and use. The strength of the
-                project was in connecting technical forecasting work with a more
-                practical decision-support layer, helping transform raw utility
-                data into clearer signals for planning and analysis.
-              </p>
+          <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(19rem,0.7fr)] lg:items-stretch">
+            <div className="project-media-column">
+              <h2 className="subsection-title project-column-title">Energy Consumption Smart Meters</h2>
+              <ProjectMediaCarousel
+                title="Analytics walkthrough"
+                items={smartMetersMedia}
+              />
             </div>
 
             <div className="info-panel project-snapshot-panel">
@@ -688,97 +786,25 @@ export default function ProjectsPage() {
               </div>
             </div>
           </div>
-        </article>
 
-        <article className="project-card mt-5">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="project-type">Healthcare AI Assistant</span>
-            <span className="skill-pill">Medical Chatbot</span>
-          </div>
-
-          <div className="mt-5 grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+          <div className="mt-7 project-overview-block">
+            <h3 className="project-overview-title">Overview</h3>
             <div>
-              <h2 className="subsection-title">Medical Chatbot</h2>
               <p className="card-copy">
-                This project focused on building a medical chatbot designed to
-                interact directly with users in a more natural and helpful way.
-                The goal was to create a conversational system that could learn
-                from realistic doctor-patient exchanges and generate responses
-                that felt coherent, relevant, and medically grounded.
+                Energy Consumption Smart Meters focused on turning large-scale
+                smart meter data into actionable forecasting and operational
+                insight. The project was centered on understanding consumption
+                behavior, identifying meaningful patterns, and building models
+                that could support better planning around electricity demand.
               </p>
               <p className="card-copy">
-                I trained an LSTM-based conversational model in TensorFlow on
-                roughly 100,000 doctor-patient conversations, and also fine-tuned
-                T5 and GPT-2 models on the same dataset for comparison. This
-                allowed the project to evaluate different conversational modeling
-                approaches side by side, comparing how sequence models and
-                transformer-based architectures performed on the same healthcare
-                dialogue task.
+                I contributed to a workflow that combined time-series analysis,
+                AI-assisted exploration, and interactive analytics to make
+                energy data easier to interpret and use. The strength of the
+                project was in connecting technical forecasting work with a more
+                practical decision-support layer, helping transform raw utility
+                data into clearer signals for planning and analysis.
               </p>
-            </div>
-
-            <div className="info-panel project-snapshot-panel">
-              <div className="card-heading">
-                <span className="card-icon-badge" aria-hidden="true">
-                  <svg
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="card-icon-svg"
-                  >
-                    <path
-                      d="M7 5.5H17C18.1 5.5 19 6.4 19 7.5V12.5C19 13.6 18.1 14.5 17 14.5H12.5L9 18V14.5H7C5.9 14.5 5 13.6 5 12.5V7.5C5 6.4 5.9 5.5 7 5.5Z"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M12 8V12M10 10H14"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>
-                <h3 className="card-title">Project snapshot</h3>
-              </div>
-              <div className="tool-groups">
-                <section className="tool-group">
-                  <h4 className="tool-group-title">Problem</h4>
-                  <p className="card-copy mt-0">
-                    Healthcare conversations require models that can respond in
-                    a coherent and context-aware way while handling realistic
-                    doctor-patient dialogue patterns.
-                  </p>
-                </section>
-                <section className="tool-group">
-                  <h4 className="tool-group-title">Focus</h4>
-                  <p className="card-copy mt-0">
-                    Build and compare multiple conversational AI approaches for
-                    user-facing medical dialogue generation.
-                  </p>
-                </section>
-                <section className="tool-group">
-                  <h4 className="tool-group-title">Stack</h4>
-                  <ul className="skill-grid skill-grid-compact">
-                    {medicalChatbotStack.map((item) => (
-                      <li key={item} className="skill-pill">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </section>
-                <section className="tool-group">
-                  <h4 className="tool-group-title">Role</h4>
-                  <p className="card-copy mt-0">
-                    AI Engineer / NLP Builder, focused on conversational model
-                    training, fine-tuning, and comparative evaluation across
-                    LSTM and transformer-based architectures.
-                  </p>
-                </section>
-              </div>
             </div>
           </div>
         </article>
@@ -789,27 +815,13 @@ export default function ProjectsPage() {
             <span className="skill-pill">Operational Dashboard Suite</span>
           </div>
 
-          <div className="mt-5 grid gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-            <div>
-              <h2 className="subsection-title">Operational Dashboard Suite</h2>
-              <p className="card-copy">
-                This project represents a body of analytics and data engineering
-                work built around stakeholder-facing dashboards for operations,
-                sales, portfolio management, revenue monitoring, and
-                cancellation analysis. The goal was to transform raw business
-                data into clear reporting experiences that leadership and
-                frontline teams could use to monitor performance and make faster
-                decisions.
-              </p>
-              <p className="card-copy">
-                The dashboard suite included support operations reporting, sales
-                versus target tracking, account bundle segmentation, revenue and
-                exam monitoring by owner, and sales versus cancellations trend
-                analysis. Across these dashboards, the recurring focus was
-                building strong KPI views, ranked comparisons, interactive
-                filters, and visual breakdowns that surfaced bottlenecks,
-                concentration points, and areas needing follow-up.
-              </p>
+          <div className="mt-5 grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(19rem,0.7fr)] lg:items-stretch">
+            <div className="project-media-column">
+              <h2 className="subsection-title project-column-title">Operational Dashboard Suite</h2>
+              <ProjectMediaCarousel
+                title="Dashboard walkthrough"
+                items={dashboardsMedia}
+              />
             </div>
 
             <div className="info-panel project-snapshot-panel">
@@ -878,6 +890,30 @@ export default function ProjectsPage() {
                   </p>
                 </section>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-7 project-overview-block">
+            <h3 className="project-overview-title">Overview</h3>
+            <div>
+              <p className="card-copy">
+                This project represents a body of analytics and data engineering
+                work built around stakeholder-facing dashboards for operations,
+                sales, portfolio management, revenue monitoring, and
+                cancellation analysis. The goal was to transform raw business
+                data into clear reporting experiences that leadership and
+                frontline teams could use to monitor performance and make faster
+                decisions.
+              </p>
+              <p className="card-copy">
+                The dashboard suite included support operations reporting, sales
+                versus target tracking, account bundle segmentation, revenue and
+                exam monitoring by owner, and sales versus cancellations trend
+                analysis. Across these dashboards, the recurring focus was
+                building strong KPI views, ranked comparisons, interactive
+                filters, and visual breakdowns that surfaced bottlenecks,
+                concentration points, and areas needing follow-up.
+              </p>
             </div>
           </div>
         </article>

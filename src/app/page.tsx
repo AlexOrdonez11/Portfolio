@@ -126,6 +126,10 @@ export default function Home() {
       <section className="soft-section">
         <div className="section-stack">
           <p className="section-kicker">AI Engineer | Data Scientist</p>
+          <h1 className="section-title hero-title">
+            I build production-ready AI and data systems that turn complex
+            information into usable decisions.
+          </h1>
           <div className="statement-grid">
             <div className="portrait-panel">
               <div className="portrait-placeholder">
@@ -142,24 +146,21 @@ export default function Home() {
             </div>
             <div className="statement-copy">
               <p>
-                I am Alex David Ordonez, an AI Engineer and Data Scientist who
-                enjoys building intelligent systems from the ground up. My work
-                brings together data engineering, machine learning, and applied AI
-                to create products that turn complex information into clear,
-                usable outcomes.
+                I am Alex David Ordonez, an AI Engineer and Data Scientist
+                focused on LLM applications, forecasting workflows, analytics
+                platforms, and cloud-ready backend systems.
               </p>
               <p>
                 I have worked across healthcare, energy, and enterprise analytics,
                 designing solutions that combine LLM workflows, scalable ML
                 pipelines, retrieval systems, APIs, and cloud-native deployment.
-                The part I enjoy most is making these systems not only capable, but
-                also explainable, maintainable, and ready for real-world use.
+                The part I enjoy most is taking an idea from model logic and data
+                pipelines all the way to an interface people can actually use.
               </p>
               <p>
-                My goal is to keep building AI products that are grounded in strong
-                engineering and shaped by practical value. I care about reliability
-                just as much as innovation, because the best AI systems are the
-                ones people can actually depend on.
+                I care about reliability just as much as innovation, because the
+                best AI systems are the ones teams can understand, maintain, and
+                depend on in real workflows.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <Link className="button-primary" href="/experience">

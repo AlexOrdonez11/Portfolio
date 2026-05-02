@@ -4,7 +4,7 @@ const timeline = [
   {
     start: "2025",
     end: "Present",
-    role: "AI/ML Specialist",
+    role: "Graduate Assisstant - Data Science",
     org: "Oakland University Business School",
     summary:
       "Built ML and LLM pipelines for medical survey analysis and developed an agentic forecasting workflow for electricity consumption research.",

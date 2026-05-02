@@ -73,6 +73,7 @@ export function ProjectMediaCarousel({
                   alt={activeItem.alt}
                   width={1400}
                   height={900}
+                  sizes="(min-width: 1024px) 48vw, (min-width: 768px) 88vw, 100vw"
                   className="project-media-image"
                 />
               </div>
