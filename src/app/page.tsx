@@ -126,10 +126,6 @@ export default function Home() {
       <section className="soft-section">
         <div className="section-stack">
           <p className="section-kicker">AI Engineer | Data Scientist</p>
-          <h1 className="section-title hero-title">
-            I build production-ready AI and data systems that turn complex
-            information into usable decisions.
-          </h1>
           <div className="statement-grid">
             <div className="portrait-panel">
               <div className="portrait-placeholder">
