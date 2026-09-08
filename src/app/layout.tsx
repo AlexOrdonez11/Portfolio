@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Portfolio",
-  description: "A Next.js portfolio for showcasing projects, skills, and contact details.",
+  title: "Alex Ordonez | AI Engineer & Data Engineer",
+  description:
+    "Portfolio of Alex Ordonez, an AI Engineer and Data Engineer building agentic AI systems, RAG applications, cloud data platforms, and production-ready pipelines.",
   icons: {
     icon: "/images/portfolio_icon.png",
     apple: "/images/portfolio_icon.png",

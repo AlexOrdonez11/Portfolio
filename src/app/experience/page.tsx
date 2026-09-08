@@ -2,36 +2,68 @@ import { SiteNav } from "@/components/site-nav";
 
 const timeline = [
   {
-    start: "2025",
+    start: "Aug 2026",
     end: "Present",
-    role: "Research Assisstant - Data Science",
-    org: "Oakland University Business School",
+    role: "Data Systems & Digital Marketing Coordinator",
+    org: "Pediatric & Young Adult Medicine",
     summary:
-      "Built ML and LLM pipelines for medical survey analysis and developed an agentic forecasting workflow for electricity consumption research.",
-    stack: ["Python", "LLMs", "LangChain", "Streamlit", "Forecasting"],
-    icon: "ai",
-  },
-  {
-    start: "2025",
-    role: "AI Engineer / Technical Lead",
-    org: "Product Manager Accelerator",
-    summary:
-      "Led architecture for AI products with multi-agent workflows, RAG systems, and cloud-ready full-stack delivery.",
-    stack: ["LangChain", "OpenAI", "FastAPI", "React", "AWS", "Qdrant"],
-    icon: "rocket",
-  },
-  {
-    start: "2021",
-    end: "2023",
-    role: "Data Analyst",
-    org: "Laureate Education",
-    summary:
-      "Built ETL pipelines, enterprise dashboards, and a CSAT survey platform that improved reporting visibility and feedback collection.",
-    stack: ["Python", "Java", "PostgreSQL", "MongoDB", "AngularJS", "Power BI"],
+      "Transform legacy medical intake forms into validated, age- and visit-aware digital workflows while building patient-facing web experiences, acquisition analytics, and an AI-powered video-generation pipeline.",
+    stack: ["Structured Extraction", "Workflow Automation", "Web Analytics", "AI Video Generation", "Veo / Runway"],
     icon: "analytics",
   },
   {
-    start: "2021",
+    start: "Jun 2026",
+    end: "Present",
+    role: "Data Operations Engineer",
+    org: "Kansul Holdings",
+    summary:
+      "Implement Azure and PostgreSQL solutions that support reliable operational workflows, with React applications and Looker dashboards that surface decision-ready metrics.",
+    stack: ["Azure", "PostgreSQL", "React", "Looker", "Operational Analytics"],
+    icon: "database",
+  },
+  {
+    start: "May 2026",
+    end: "Jul 2026",
+    role: "Data Engineer",
+    org: "Linker Finance",
+    summary:
+      "Built and validated a multi-tenant AWS data lake with bronze, silver, and gold layers; developed tested Python ETL pipelines and tenant-aware APIs that supported analytics and downstream AI services.",
+    stack: ["Python", "S3", "Glue / Athena", "Lambda", "Parquet", "FastAPI", "OpenLineage", "Datadog"],
+    icon: "database",
+  },
+  {
+    start: "Sep 2025",
+    end: "May 2026",
+    role: "Research Assistant - Data Science",
+    org: "Oakland University Business School",
+    summary:
+      "Built ML and LLM pipelines for medical survey analytics, SAS and Python workflows for AMI forecasting and grid analysis, and scalable geospatial pipelines for multi-hazard risk research.",
+    stack: ["Python", "SAS", "LLMs", "Forecasting", "Time Series", "Geospatial Analytics"],
+    icon: "ai",
+  },
+  {
+    start: "May 2025",
+    end: "Sep 2025",
+    role: "AI Engineer / Technical Lead",
+    org: "Product Manager Accelerator",
+    summary:
+      "Led AI product delivery from business requirements through architecture, implementation, testing, and production handoff, including multi-agent applications, RAG pipelines, and structured data-ingestion workflows.",
+    stack: ["LangChain / LangGraph", "OpenAI", "FastAPI", "MongoDB", "AWS", "Docker", "Qdrant"],
+    icon: "rocket",
+  },
+  {
+    start: "Dec 2021",
+    end: "Nov 2023",
+    role: "Data Analyst",
+    org: "Laureate Education",
+    summary:
+      "Built enterprise ETL pipelines, Power BI dashboards, automated KPI reporting that improved performance visibility by 30%, and a CSAT data collection and reporting platform.",
+    stack: ["Python", "SQL", "PostgreSQL", "MongoDB", "DynamoDB", "AngularJS", "Power BI"],
+    icon: "analytics",
+  },
+  {
+    start: "Jan 2021",
+    end: "Nov 2021",
     role: "Data Engineer",
     org: "Claro Enterprise Solutions",
     summary:
@@ -39,60 +71,46 @@ const timeline = [
     stack: ["Python", "Java", "Oracle DB", "Power BI", "ETL"],
     icon: "database",
   },
-  {
-    start: "2019",
-    end: "2020",
-    role: "Mobile Developer",
-    org: "Dinant",
-    summary:
-      "Developed Android logistics tooling and streamlined operational data collection through mobile workflow automation.",
-    stack: ["Java", "Kotlin", "Android", "Logistics"],
-    icon: "mobile",
-  },
 ];
 
 const credentials = {
   tools: [
     {
       category: "Programming",
-      items: ["Python", "SQL", "Java", "R", "SAS", "C++", "C", "Kotlin", "JavaScript", "TypeScript"],
+      items: ["Python", "SQL", "PySpark", "Pandas", "NumPy", "SAS", "R", "Java", "TypeScript", "Bash"],
     },
     {
-      category: "Data Engineering",
-      items: ["Airflow", "Spark", "Databricks", "Snowflake", "MongoDB", "SQL Server", "Oracle DB", "PostgreSQL", "MySQL", "DBT"],
+      category: "Data Engineering & Cloud",
+      items: ["Amazon S3", "AWS Glue", "Athena", "Lambda", "Step Functions", "Lake Formation", "Spark", "Databricks", "Snowflake", "PostgreSQL", "MongoDB", "DynamoDB"],
     },
     {
       category: "AI / ML",
-      items: ["Qdrant", "LangChain", "OpenAI", "Gemini", "Transformers", "Hugging Face", "LLMs", "Forecasting"],
+      items: ["LangChain", "LangGraph", "OpenAI", "Gemini", "Hugging Face", "RAG", "Qdrant", "Scikit-Learn", "TensorFlow", "PyTorch", "Forecasting"],
     },
     {
-      category: "Cloud / Backend",
-      items: ["AWS", "GCP", "FastAPI", "Flask", "Docker", "Git", "CI/CD", "Cloud Storage", "Microservices"],
+      category: "Applications & Delivery",
+      items: ["FastAPI", "Flask", "REST APIs", "React", "Angular", "Streamlit", "Docker", "GitHub Actions", "pytest", "OpenLineage", "CloudWatch", "Datadog"],
     },
     {
-      category: "Analytics",
-      items: ["Power BI", "Tableau", "Excel", "Scikit-Learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "GeoPandas"],
-    },
-    {
-      category: "Frontend",
-      items: ["React", "Angular"],
+      category: "Analytics & Reporting",
+      items: ["Power BI", "Looker", "Excel", "Matplotlib", "KPI Dashboards", "Data Visualization", "Statistical Modeling"],
     }
   ],
   skills: [
-    "Agentic AI architectures",
-    "LLM Implementation",
-    "RAG and vector search",
-    "ETL / ELT pipelines",
-    "FastAPI and microservices",
-    "AWS and GCP deployment",
-    "Data Analytics",
-    "Data Visualization",
-    "ML Pipelines",
+    "Cloud data lake architecture",
+    "ETL / ELT pipeline development",
+    "Data modeling and partitioning",
+    "Data quality and automated testing",
+    "Orchestration and observability",
+    "API and application development",
+    "RAG and agentic AI systems",
+    "Advanced analytics and forecasting",
+    "Technical leadership",
   ],
   certifications: [
     "SAS Workbench & Sustainability Champion",
-    "AI Engineer Certification",
-    "AI Agents Fundamentals - Databricks",
+    "AI Engineer Certification - Product Manager Accelerator",
+    "Databricks AI Agents Fundamentals",
     "Databricks Fundamentals",
   ],
 };
@@ -201,10 +219,10 @@ export default function ExperiencePage() {
 
       <section className="soft-section">
         <div className="section-stack">
-          <h1 className="section-title experience-title">Experience across AI, analytics, and data systems.</h1>
+          <h1 className="section-title experience-title">Experience across AI engineering, data engineering, and analytics.</h1>
           <p className="section-support">
-            Selected roles across AI, analytics, and data engineering, with a focus on
-            intelligent systems, reliable delivery, and practical product value.
+            Selected roles building intelligent applications, cloud data platforms,
+            operational workflows, and analytics products with reliable delivery.
           </p>
 
           <div className="timeline">
@@ -304,7 +322,8 @@ export default function ExperiencePage() {
         <div className="pt-8">
           <a
             className="button-primary"
-            href="/resume/Alex_David_Ordonez_Resume.pdf"
+            href="/resume/Alex_Ordonez_AI_Data_Engineer_Resume.pdf"
+            download
             target="_blank"
             rel="noreferrer"
           >

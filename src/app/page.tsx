@@ -7,16 +7,16 @@ const technicalStrengths = [
     title: "AI / ML",
     icon: "ai",
     items: [
-      "GPT-4/5",
+      "OpenAI GPT",
       "Gemini",
       "LangChain",
       "LangGraph",
       "RAG",
+      "Vector Search",
       "Scikit-Learn",
-      "SpaCy",
       "Hugging Face",
-      "TensorFlow",
-      "PyTorch",
+      "BERT / RoBERTa",
+      "Forecasting",
     ],
   },
   {
@@ -24,17 +24,17 @@ const technicalStrengths = [
     icon: "data",
     items: [
       "Python",
-      "Java",
       "SQL",
+      "PySpark",
+      "AWS Data Lakes",
+      "AWS Glue / Athena",
       "PostgreSQL",
       "MongoDB",
-      "Spark",
       "Snowflake",
       "Databricks",
-      "Qdrant",
       "ETL / ELT",
-      "Power BI",
-      "Airflow"
+      "Data Quality",
+      "OpenLineage",
     ],
   },
   {
@@ -42,15 +42,15 @@ const technicalStrengths = [
     icon: "cloud",
     items: [
       "AWS",
+      "Azure",
       "GCP",
       "FastAPI",
-      "Flask",
       "REST APIs",
       "Docker",
-      "CI/CD",
-      "Microservices",
-      "Git Workflows",
-      "Cloud Storage"
+      "GitHub Actions",
+      "pytest",
+      "Datadog",
+      "Power BI / Looker",
     ],
   },
 ];
@@ -59,13 +59,13 @@ const education = [
   {
     degree: "Master of Science in Business Analytics",
     school: "Oakland University",
-    period: "2024 - 2025",
-    location: "Rochester, Michigan US",
+    period: "Sep 2024 - Dec 2025",
+    location: "Rochester, Michigan, US",
   },
   {
     degree: "Bachelor's in Computer Systems Engineering",
     school: "Universidad Tecnologica Centroamericana",
-    period: "2017 - 2022",
+    period: "Jan 2017 - Mar 2022",
     location: "Tegucigalpa, Honduras",
   },
 ];
@@ -125,7 +125,7 @@ export default function Home() {
 
       <section className="soft-section">
         <div className="section-stack">
-          <p className="section-kicker">AI Engineer | Data Scientist</p>
+          <p className="section-kicker">AI Engineer | Data Engineer</p>
           <div className="statement-grid">
             <div className="portrait-panel">
               <div className="portrait-placeholder">
@@ -142,21 +142,16 @@ export default function Home() {
             </div>
             <div className="statement-copy">
               <p>
-                I am Alex David Ordonez, an AI Engineer and Data Scientist
-                focused on LLM applications, forecasting workflows, analytics
-                platforms, and cloud-ready backend systems.
+                I am Alex David Ordonez, an AI Engineer and Data Engineer with
+                5+ years of experience across data engineering, analytics, cloud,
+                machine learning, and AI product delivery. I build intelligent
+                applications on reliable, production-ready data foundations.
               </p>
               <p>
-                I have worked across healthcare, energy, and enterprise analytics,
-                designing solutions that combine LLM workflows, scalable ML
-                pipelines, retrieval systems, APIs, and cloud-native deployment.
-                The part I enjoy most is taking an idea from model logic and data
-                pipelines all the way to an interface people can actually use.
+                My experience includes building a multi-tenant AWS data lake for financial analytics and downstream AI, developing LLM applications and RAG pipelines, and leading the architecture and implementation of multi-agent workflows. Currently, I’m working on healthcare automation at PYAM and enterprise data and analytics solutions for Kansul Holdings.
               </p>
               <p>
-                I care about reliability just as much as innovation, because the
-                best AI systems are the ones teams can understand, maintain, and
-                depend on in real workflows.
+                With a foundation in Python, SQL, AWS, GCP and Azure, I connect data engineering with AI development from data pipelines and integration to evaluation and deployment. I’m especially interested in building systems that make data more useful, automate complex work, and support better decisions.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <Link className="button-primary" href="/experience">
@@ -164,7 +159,8 @@ export default function Home() {
                 </Link>
                 <a
                   className="button-secondary"
-                  href="/resume/Alex_David_Ordonez_Resume.pdf"
+                  href="/resume/Alex_Ordonez_AI_Data_Engineer_Resume.pdf"
+                  download
                   target="_blank"
                   rel="noreferrer"
                 >

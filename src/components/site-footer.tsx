@@ -7,8 +7,8 @@ const contactItems = [
   },
   {
     label: "Email",
-    value: "ale11davi@gmail.com",
-    href: "mailto:ale11davi@gmail.com",
+    value: "alex.ordonez.eng@gmail.com",
+    href: "mailto:alex.ordonez.eng@gmail.com",
     icon: "email",
   },
   {
@@ -90,7 +90,8 @@ export function SiteFooter() {
             <p className="section-kicker">Contact</p>
             <h2 className="subsection-title">Let&apos;s connect</h2>
             <p className="footer-support">
-              Open to AI engineering, data, and product-building conversations.
+              Open to AI engineering, data engineering, analytics, and
+              product-building conversations.
             </p>
           </div>
 
@@ -117,7 +118,7 @@ export function SiteFooter() {
         </section>
         <div className="footer-bottom">
           <p>Alex Ordonez</p>
-          <p>AI Engineer | Data Scientist</p>
+          <p>AI Engineer | Data Engineer</p>
         </div>
       </div>
     </footer>
