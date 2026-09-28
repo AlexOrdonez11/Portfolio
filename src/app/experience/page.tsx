@@ -227,7 +227,7 @@ export default function ExperiencePage() {
 
           <div className="timeline">
             {timeline.map((item) => (
-              <article key={`${item.start}-${item.role}`} className="timeline-item">
+              <article key={`${item.start}-${item.role}`} id={item.org === "Linker Finance" ? "linker-finance" : undefined} className="timeline-item scroll-mt-8">
                 <div className="timeline-year">
                   <span className="timeline-year-start">{item.start}</span>
                   <span className={`timeline-year-end${item.end ? "" : " timeline-year-end-empty"}`}>
