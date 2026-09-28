@@ -90,8 +90,8 @@ export function SiteFooter() {
             <p className="section-kicker">Contact</p>
             <h2 className="subsection-title">Let&apos;s connect</h2>
             <p className="footer-support">
-              Open to AI engineering, data engineering, analytics, and
-              product-building conversations.
+              Hiring for AI applications or data infrastructure? Let&apos;s talk
+              about the systems your team is building.
             </p>
           </div>
 

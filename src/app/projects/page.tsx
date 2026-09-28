@@ -84,15 +84,8 @@ const clientSignalEqMedia = [
 ];
 
 const analyticsAiStack = [
-  "Forecasting",
-  "Agentic AI",
-  "SAS",
-  "Python",
-  "Gemini",
-  "Time-Series Modeling",
-  "Simulation",
-  "Optimization",
-  "Interactive Analytics",
+  "Python", "GPT-5-mini", "LangChain", "FastAPI", "React",
+  "MongoDB", "Cloud Run", "Cloud Storage", "Forecasting",
 ];
 
 const analyticsAiMedia = [
@@ -248,7 +241,7 @@ export default function ProjectsPage() {
 
       <section className="px-1 pt-12 md:pt-6">
 
-        <article className="project-card">
+        <article id="myhandyai" className="project-card scroll-mt-8">
           <div className="flex flex-wrap items-center gap-3">
             <span className="project-type">Featured AI Product</span>
             <span className="skill-pill">MyHandyAI</span>
@@ -358,7 +351,7 @@ export default function ProjectsPage() {
           </div>
         </article>
 
-        <article className="project-card mt-5">
+        <article id="clientsignaleq" className="project-card mt-5 scroll-mt-8">
           <div className="flex flex-wrap items-center gap-3">
             <span className="project-type">Enterprise Intelligence</span>
             <span className="skill-pill">Client Signal EQ</span>
@@ -455,7 +448,7 @@ export default function ProjectsPage() {
             <h3 className="project-overview-title">Overview</h3>
             <div>
               <p className="card-copy">
-                Client Signal EQ is an AI platform designed to analyze enterprise
+                Client Signal EQ is an internship project designed to analyze enterprise
                 email communication and surface patterns that matter to account
                 teams and business leaders. The goal was to move beyond basic
                 message review and create a system that could detect sentiment,
@@ -471,9 +464,27 @@ export default function ProjectsPage() {
               </p>
             </div>
           </div>
+          <div className="mt-7 info-panel">
+            <h3 className="card-title">Engineering decisions</h3>
+            <p className="card-copy">
+              When long-running analysis exceeded API Gateway time limits, our
+              team moved processing to SQS-backed asynchronous jobs, keeping
+              the request path separate from model execution.
+            </p>
+            <p className="card-copy">
+              To address inconsistent LLM responses, we split analysis into
+              focused agents and merged their outputs into a strict schema.
+              We also compared model variants on representative samples and
+              limited context and output length to balance quality, latency,
+              and cost.
+            </p>
+            <p className="card-meta mt-4">
+              Built during my Product Manager Accelerator internship.
+            </p>
+          </div>
         </article>
 
-        <article className="project-card mt-5">
+        <article id="analytics-ai" className="project-card mt-5 scroll-mt-8">
           <div className="flex flex-wrap items-center gap-3">
             <span className="project-type"> Analytics Platform</span>
             <span className="skill-pill">Analytics AI</span>
@@ -524,15 +535,15 @@ export default function ProjectsPage() {
                 <section className="tool-group">
                   <h4 className="tool-group-title">Problem</h4>
                   <p className="card-copy mt-0">
-                    Forecasting outputs are often technically correct but hard
-                    for teams to explore, question, and operationalize.
+                    Exploring a dataset often requires moving between code,
+                    charts, and separate analysis tools.
                   </p>
                 </section>
                 <section className="tool-group">
                   <h4 className="tool-group-title">Focus</h4>
                   <p className="card-copy mt-0">
-                    Combine predictive modeling with AI-guided exploration,
-                    simulation, and interactive decision support.
+                    Bring exploratory analysis, forecasting, visualization,
+                    and summaries into a conversational application.
                   </p>
                 </section>
                 <section className="tool-group">
@@ -548,16 +559,15 @@ export default function ProjectsPage() {
                 <section className="tool-group">
                   <h4 className="tool-group-title">Role</h4>
                   <p className="card-copy mt-0">
-                    AI Engineer / Analytics Builder, focused on forecasting
-                    workflows, agentic analysis, and translating model output
-                    into practical insight.
+                    AI Engineer, building the chat-driven analytics application
+                    across its Python backend, React interface, and cloud services.
                   </p>
                 </section>
                 <section className="tool-group">
                   <h4 className="tool-group-title">Outcome</h4>
                   <p className="card-copy mt-0">
-                    Connected forecasting, simulation, and AI-guided exploration
-                    into a more interactive decision-support workflow.
+                    Built a conversational workflow for data exploration and
+                    forecasting with persisted project context.
                   </p>
                 </section>
               </div>
@@ -568,19 +578,16 @@ export default function ProjectsPage() {
             <h3 className="project-overview-title">Overview</h3>
             <div>
               <p className="card-copy">
-                Analytics AI was built around the idea that advanced forecasting
-                and decision support should be easier to explore, explain, and
-                act on. The project focused on combining predictive analytics
-                with agentic AI workflows so users could move from raw data and
-                model outputs to more interactive insight generation.
+                Analytics AI is a conversational data analyst application.
+                It combines GPT-5-mini and LangChain with a FastAPI backend and
+                React interface for natural-language exploration, forecasting,
+                visualizations, and analytical summaries.
               </p>
               <p className="card-copy">
-                I contributed to a solution that brought together forecasting,
-                simulation, and AI-assisted analytics for electricity
-                consumption scenarios. The system was designed not only to
-                generate predictions, but also to help users interrogate the
-                results, understand possible trends, and explore operational
-                decisions through a more natural analytical experience.
+                I built the application with MongoDB for persisted project
+                context and Google Cloud Run and Cloud Storage for the backend
+                and data storage. This is a separate project from the smart
+                meter forecasting work shown below.
               </p>
             </div>
           </div>

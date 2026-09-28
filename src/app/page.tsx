@@ -141,21 +141,27 @@ export default function Home() {
               </div>
             </div>
             <div className="statement-copy">
+              <h1 className="text-3xl font-semibold leading-tight tracking-tight text-[color:var(--ink)] md:text-4xl">
+                I build AI applications and the data systems behind them.
+              </h1>
               <p>
-                I am Alex David Ordonez, an AI Engineer and Data Engineer with
-                5+ years of experience across data engineering, analytics, cloud,
-                machine learning, and AI product delivery. I build intelligent
-                applications on reliable, production-ready data foundations.
+                I work across Python backends, retrieval, agent workflows, and
+                cloud data pipelines, connecting AI features to the systems
+                that make them useful.
               </p>
               <p>
-                My experience includes building a multi-tenant AWS data lake for financial analytics and downstream AI, developing LLM applications and RAG pipelines, and leading the architecture and implementation of multi-agent workflows. Currently, I’m working on healthcare automation at PYAM and enterprise data and analytics solutions for Kansul Holdings.
+                My work includes a multi-tenant AWS data lake at Linker Finance,
+                technical leadership on MyHandyAI, and client communication
+                analysis with ClientSignalEQ. I currently build healthcare
+                workflows at PYAM and data solutions for Kansul Holdings.
               </p>
               <p>
-                With a foundation in Python, SQL, AWS, GCP and Azure, I connect data engineering with AI development from data pipelines and integration to evaluation and deployment. I’m especially interested in building systems that make data more useful, automate complex work, and support better decisions.
+                Exploring AI engineering and data engineering opportunities in
+                California, Michigan, and Minnesota.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
-                <Link className="button-primary" href="/experience">
-                  View experience
+                <Link className="button-primary" href="#selected-work">
+                  Explore selected work
                 </Link>
                 <a
                   className="button-secondary"
@@ -169,6 +175,47 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="selected-work" className="scroll-mt-8 px-1 pt-10 md:pt-12">
+        <h2 className="subsection-title">Selected engineering work</h2>
+        <p className="mt-3 max-w-4xl text-base leading-8 text-[color:var(--muted)]">
+          Three examples of how I connect data, backend engineering, and AI.
+        </p>
+        <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+          {[
+            {
+              title: "Financial data foundations",
+              context: "Linker Finance · Data Engineer",
+              copy: "Built a multi-tenant AWS data lake, Python ETL pipelines, automated validation, and tenant-aware FastAPI endpoints for financial analytics and downstream AI.",
+              href: "/experience#linker-finance",
+              action: "Explore data engineering experience",
+            },
+            {
+              title: "MyHandyAI",
+              context: "AI Engineer / Technical Lead · Internship project",
+              copy: "Led a multimodal repair assistant combining image input, retrieval, clarification, and agent workflows. Explore the product demo and architecture.",
+              href: "/projects#myhandyai",
+              action: "View MyHandyAI case study",
+            },
+            {
+              title: "ClientSignalEQ",
+              context: "AI Engineer / Technical Lead · Internship project",
+              copy: "Built client communication analysis with structured AI outputs and asynchronous processing. Read how the team addressed API timeouts and inconsistent model responses.",
+              href: "/projects#clientsignaleq",
+              action: "View ClientSignalEQ case study",
+            },
+          ].map((work) => (
+            <article key={work.title} className="info-panel flex flex-col">
+              <p className="card-meta">{work.context}</p>
+              <h3 className="card-title mt-3">{work.title}</h3>
+              <p className="card-copy">{work.copy}</p>
+              <Link href={work.href} className="mt-auto pt-5 font-semibold underline underline-offset-4">
+                {work.action}
+              </Link>
+            </article>
+          ))}
         </div>
       </section>
 

@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alex Ordonez | AI Engineer & Data Engineer",
   description:
-    "Portfolio of Alex Ordonez, an AI Engineer and Data Engineer building agentic AI systems, RAG applications, cloud data platforms, and production-ready pipelines.",
+    "Alex Ordonez builds AI applications and the data systems behind them: RAG, agent workflows, Python APIs, and AWS data pipelines. Explore projects, architecture, and engineering experience.",
   icons: {
     icon: "/images/portfolio_icon.png",
     apple: "/images/portfolio_icon.png",
